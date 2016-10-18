@@ -738,7 +738,7 @@ namespace Org.Apache.REEF.IMRU.OnREEF.Driver
             var failMessage = _cancelEvent != null
                     ? string.Format(CultureInfo.InvariantCulture,
                         "{0} Job cancelled at {1}. cancellation message: {2}",
-                        FailActionPrefix, _cancelEvent.Timestamp, _cancelEvent.Message)
+                        FailActionPrefix, _cancelEvent.Timestamp.ToString("u"), _cancelEvent.Message)
                     : string.Format(CultureInfo.InvariantCulture,
                         "{0} The system cannot be recovered after {1} retries. NumberofFailedMappers in the last try is {2}.",
                         FailActionPrefix, _numberOfRetries, _evaluatorManager.NumberofFailedMappers());

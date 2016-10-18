@@ -1,0 +1,1253 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Org.Apache.REEF.IMRU.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.OrgApacheREEFIMRUDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of Org.Apache.REEF.IMRU</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUCodecConfiguration`1</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.#ctor(Org.Apache.REEF.IMRU.API.IMRUCodecConfiguration{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.Constructor">
+            <summary>Sets the shim of IMRUCodecConfiguration`1.IMRUCodecConfiguration`1()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.StaticConstructor">
+            <summary>Sets the shim of IMRUCodecConfiguration`1.IMRUCodecConfiguration`1()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUCodecConfiguration`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUJobDefinition</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.#ctor(Org.Apache.REEF.IMRU.API.IMRUJobDefinition)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.ConstructorIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationIConfigurationISetOfIConfigurationInt32Int32Int32Int32Int32Int32StringBoolean">
+            <summary>Sets the shim of IMRUJobDefinition.IMRUJobDefinition(IConfiguration updateTaskStateConfiguration, IConfiguration mapTaskStateConfiguration, IConfiguration mapFunctionConfiguration, IConfiguration mapInputCodecConfiguration, IConfiguration updateFunctionCodecsConfiguration, IConfiguration reduceFunctionConfiguration, IConfiguration updateFunctionConfiguration, IConfiguration mapOutputPipelineDataConverterConfiguration, IConfiguration mapInputPipelineDataConverterConfiguration, IConfiguration partitionedDatasetConfiguration, IConfiguration resultHandlerConfiguration, IConfiguration jobCancelSignalConfiguration, ISet`1&lt;IConfiguration&gt; perMapConfigGeneratorConfig, Int32 numberOfMappers, Int32 memoryPerMapper, Int32 updateTaskMemory, Int32 mapTaskCores, Int32 updateTaskCores, Int32 maxRetryNumberInRecovery, String jobName, Boolean invokeGC)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.InvokeGarbageCollectorAfterIterationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_InvokeGarbageCollectorAfterIteration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.JobCancelSignalConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_JobCancelSignalConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.JobCancelSignalConfigurationSetIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinition.set_JobCancelSignalConfiguration(IConfiguration value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.JobNameGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_JobName()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapFunctionConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapFunctionConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapInputCodecConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapInputCodecConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapInputPipelineDataConverterConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapInputPipelineDataConverterConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapOutputPipelineDataConverterConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapOutputPipelineDataConverterConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapTaskCoresGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapTaskCores()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapTaskStateConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapTaskStateConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MapperMemoryGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapperMemory()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.MaxRetryNumberInRecoveryGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MaxRetryNumberInRecovery()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.NumberOfMappersGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_NumberOfMappers()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.PartitionedDatasetConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_PartitionedDatasetConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.PerMapConfigGeneratorConfigGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_PerMapConfigGeneratorConfig()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.ReduceFunctionConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_ReduceFunctionConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.ResultHandlerConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_ResultHandlerConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.UpdateFunctionCodecsConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateFunctionCodecsConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.UpdateFunctionConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateFunctionConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.UpdateTaskCoresGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateTaskCores()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.UpdateTaskMemoryGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateTaskMemory()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.UpdateTaskStateConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateTaskStateConfiguration()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.InvokeGarbageCollectorAfterIterationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_InvokeGarbageCollectorAfterIteration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.JobCancelSignalConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_JobCancelSignalConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.JobCancelSignalConfigurationSetIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinition.set_JobCancelSignalConfiguration(IConfiguration value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.JobNameGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_JobName()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapFunctionConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapFunctionConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapInputCodecConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapInputCodecConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapInputPipelineDataConverterConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapInputPipelineDataConverterConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapOutputPipelineDataConverterConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapOutputPipelineDataConverterConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapTaskCoresGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapTaskCores()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapTaskStateConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapTaskStateConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MapperMemoryGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MapperMemory()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.MaxRetryNumberInRecoveryGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_MaxRetryNumberInRecovery()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.NumberOfMappersGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_NumberOfMappers()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.PartitionedDatasetConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_PartitionedDatasetConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.PerMapConfigGeneratorConfigGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_PerMapConfigGeneratorConfig()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.ReduceFunctionConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_ReduceFunctionConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.ResultHandlerConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_ResultHandlerConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.UpdateFunctionCodecsConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateFunctionCodecsConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.UpdateFunctionConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateFunctionConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.UpdateTaskCoresGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateTaskCores()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.UpdateTaskMemoryGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateTaskMemory()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinition.AllInstances.UpdateTaskStateConfigurationGet">
+            <summary>Sets the shim of IMRUJobDefinition.get_UpdateTaskStateConfiguration()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUJobDefinitionBuilder</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.#ctor(Org.Apache.REEF.IMRU.API.IMRUJobDefinitionBuilder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.Build">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.Build()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.Constructor">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.IMRUJobDefinitionBuilder()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.InvokeGarbageCollectorAfterIterationBoolean">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.InvokeGarbageCollectorAfterIteration(Boolean invokeGC)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetJobCancellationConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetJobCancellationConfiguration(IConfiguration cancelSignalConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetJobNameString">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetJobName(String name)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapFunctionConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapFunctionConfiguration(IConfiguration mapFunctionConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapInputCodecConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapInputCodecConfiguration(IConfiguration mapInputCodecConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapInputPipelineDataConverterConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapInputPipelineDataConverterConfiguration(IConfiguration mapInputPipelineDataConverterConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapOutputPipelineDataConverterConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapOutputPipelineDataConverterConfiguration(IConfiguration mapOutputPipelineDataConverterConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapTaskCoresInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapTaskCores(Int32 cores)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapTaskStateConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapTaskStateConfiguration(IConfiguration mapTaskStateConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMapperMemoryInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapperMemory(Int32 memory)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetMaxRetryNumberInRecoveryInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMaxRetryNumberInRecovery(Int32 maxRetryNumberInRecovery)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetNumberOfMappersInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetNumberOfMappers(Int32 numberOfMappers)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetPartitionedDatasetConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetPartitionedDatasetConfiguration(IConfiguration partitionedDatasetConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetPerMapConfigurationsIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetPerMapConfigurations(IConfiguration perMapperConfig)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetReduceFunctionConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetReduceFunctionConfiguration(IConfiguration reduceFunctionConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetResultHandlerConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetResultHandlerConfiguration(IConfiguration resultHandlerConfig)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetUpdateFunctionCodecsConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateFunctionCodecsConfiguration(IConfiguration updateFunctionCodecsConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetUpdateFunctionConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateFunctionConfiguration(IConfiguration updateFunctionConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetUpdateTaskCoresInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateTaskCores(Int32 cores)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetUpdateTaskMemoryInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateTaskMemory(Int32 memory)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.SetUpdateTaskStateConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateTaskStateConfiguration(IConfiguration updateTaskStateConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.StaticConstructor">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.IMRUJobDefinitionBuilder()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.Build">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.Build()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.InvokeGarbageCollectorAfterIterationBoolean">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.InvokeGarbageCollectorAfterIteration(Boolean invokeGC)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetJobCancellationConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetJobCancellationConfiguration(IConfiguration cancelSignalConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetJobNameString">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetJobName(String name)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapFunctionConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapFunctionConfiguration(IConfiguration mapFunctionConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapInputCodecConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapInputCodecConfiguration(IConfiguration mapInputCodecConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapInputPipelineDataConverterConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapInputPipelineDataConverterConfiguration(IConfiguration mapInputPipelineDataConverterConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapOutputPipelineDataConverterConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapOutputPipelineDataConverterConfiguration(IConfiguration mapOutputPipelineDataConverterConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapTaskCoresInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapTaskCores(Int32 cores)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapTaskStateConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapTaskStateConfiguration(IConfiguration mapTaskStateConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMapperMemoryInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMapperMemory(Int32 memory)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetMaxRetryNumberInRecoveryInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetMaxRetryNumberInRecovery(Int32 maxRetryNumberInRecovery)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetNumberOfMappersInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetNumberOfMappers(Int32 numberOfMappers)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetPartitionedDatasetConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetPartitionedDatasetConfiguration(IConfiguration partitionedDatasetConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetPerMapConfigurationsIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetPerMapConfigurations(IConfiguration perMapperConfig)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetReduceFunctionConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetReduceFunctionConfiguration(IConfiguration reduceFunctionConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetResultHandlerConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetResultHandlerConfiguration(IConfiguration resultHandlerConfig)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetUpdateFunctionCodecsConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateFunctionCodecsConfiguration(IConfiguration updateFunctionCodecsConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetUpdateFunctionConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateFunctionConfiguration(IConfiguration updateFunctionConfiguration)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetUpdateTaskCoresInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateTaskCores(Int32 cores)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetUpdateTaskMemoryInt32">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateTaskMemory(Int32 memory)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUJobDefinitionBuilder.AllInstances.SetUpdateTaskStateConfigurationIConfiguration">
+            <summary>Sets the shim of IMRUJobDefinitionBuilder.SetUpdateTaskStateConfiguration(IConfiguration updateTaskStateConfiguration)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUMapConfiguration`2</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.#ctor(Org.Apache.REEF.IMRU.API.IMRUMapConfiguration{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.Constructor">
+            <summary>Sets the shim of IMRUMapConfiguration`2.IMRUMapConfiguration`2()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.StaticConstructor">
+            <summary>Sets the shim of IMRUMapConfiguration`2.IMRUMapConfiguration`2()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUMapConfiguration`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUPerMapperConfigGeneratorConfiguration</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.#ctor(Org.Apache.REEF.IMRU.API.IMRUPerMapperConfigGeneratorConfiguration)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.Constructor">
+            <summary>Sets the shim of IMRUPerMapperConfigGeneratorConfiguration.IMRUPerMapperConfigGeneratorConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.StaticConstructor">
+            <summary>Sets the shim of IMRUPerMapperConfigGeneratorConfiguration.IMRUPerMapperConfigGeneratorConfiguration()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPerMapperConfigGeneratorConfiguration.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUPipelineDataConverterConfiguration`1</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.#ctor(Org.Apache.REEF.IMRU.API.IMRUPipelineDataConverterConfiguration{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.Constructor">
+            <summary>Sets the shim of IMRUPipelineDataConverterConfiguration`1.IMRUPipelineDataConverterConfiguration`1()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.StaticConstructor">
+            <summary>Sets the shim of IMRUPipelineDataConverterConfiguration`1.IMRUPipelineDataConverterConfiguration`1()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUPipelineDataConverterConfiguration`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUReduceFunctionConfiguration`1</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.#ctor(Org.Apache.REEF.IMRU.API.IMRUReduceFunctionConfiguration{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.Constructor">
+            <summary>Sets the shim of IMRUReduceFunctionConfiguration`1.IMRUReduceFunctionConfiguration`1()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.StaticConstructor">
+            <summary>Sets the shim of IMRUReduceFunctionConfiguration`1.IMRUReduceFunctionConfiguration`1()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUReduceFunctionConfiguration`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.IMRUUpdateConfiguration`3</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.#ctor(Org.Apache.REEF.IMRU.API.IMRUUpdateConfiguration{`0,`1,`2})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.Constructor">
+            <summary>Sets the shim of IMRUUpdateConfiguration`3.IMRUUpdateConfiguration`3()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.StaticConstructor">
+            <summary>Sets the shim of IMRUUpdateConfiguration`3.IMRUUpdateConfiguration`3()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimIMRUUpdateConfiguration`3.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.PerMapConfigGeneratorSet</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.#ctor(Org.Apache.REEF.IMRU.API.PerMapConfigGeneratorSet)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.Bind(Org.Apache.REEF.Tang.Annotations.Name{System.Collections.Generic.ISet{Org.Apache.REEF.IMRU.API.IPerMapperConfigGenerator}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.Constructor">
+            <summary>Sets the shim of PerMapConfigGeneratorSet.PerMapConfigGeneratorSet()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimPerMapConfigGeneratorSet.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2">
+            <summary>Shim type of Org.Apache.REEF.IMRU.API.UpdateResult`2</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.#ctor(Org.Apache.REEF.IMRU.API.UpdateResult{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AnotherRoundT0">
+            <summary>Sets the shim of UpdateResult`2.AnotherRound(!0 mapInput)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AnotherRoundT0T1">
+            <summary>Sets the shim of UpdateResult`2.AnotherRound(!0 mapInput, !1 intermediateResult)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.ConstructorBooleanBooleanBooleanT1T0">
+            <summary>Sets the shim of UpdateResult`2.UpdateResult`2(Boolean done, Boolean hasMapInput, Boolean hasResult, !1 result, !0 mapInput)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.DoneT1">
+            <summary>Sets the shim of UpdateResult`2.Done(!1 result)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.HasMapInputGet">
+            <summary>Sets the shim of UpdateResult`2.get_HasMapInput()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.HasResultGet">
+            <summary>Sets the shim of UpdateResult`2.get_HasResult()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.IsDoneGet">
+            <summary>Sets the shim of UpdateResult`2.get_IsDone()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.IsNotDoneGet">
+            <summary>Sets the shim of UpdateResult`2.get_IsNotDone()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.MapInputGet">
+            <summary>Sets the shim of UpdateResult`2.get_MapInput()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.ResultGet">
+            <summary>Sets the shim of UpdateResult`2.get_Result()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances.HasMapInputGet">
+            <summary>Sets the shim of UpdateResult`2.get_HasMapInput()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances.HasResultGet">
+            <summary>Sets the shim of UpdateResult`2.get_HasResult()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances.IsDoneGet">
+            <summary>Sets the shim of UpdateResult`2.get_IsDone()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances.IsNotDoneGet">
+            <summary>Sets the shim of UpdateResult`2.get_IsNotDone()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances.MapInputGet">
+            <summary>Sets the shim of UpdateResult`2.get_MapInput()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.ShimUpdateResult`2.AllInstances.ResultGet">
+            <summary>Sets the shim of UpdateResult`2.get_Result()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUClient">
+            <summary>Stub type of Org.Apache.REEF.IMRU.API.IIMRUClient</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUClient.#ctor">
+            <summary>Initializes a new instance of type StubIIMRUClient</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUClient.JobSubmissionResultGet">
+            <summary>Sets the stub of IIMRUClient.get_JobSubmissionResult()</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUClient.oareefimru::Org#Apache#REEF#IMRU#API#IIMRUClient#Submit``4(Org.Apache.REEF.IMRU.API.IMRUJobDefinition)">
+            <summary>Sets the stub of IIMRUClient.Submit(IMRUJobDefinition jobDefinition)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUClient.SubmitOf4IMRUJobDefinition``4(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Org.Apache.REEF.IMRU.API.IMRUJobDefinition,System.Collections.Generic.IEnumerable{``2}})">
+            <summary>Sets stubs of Submit(IMRUJobDefinition jobDefinition)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUClient.oareefimru::Org#Apache#REEF#IMRU#API#IIMRUClient#JobSubmissionResult">
+            <summary>Sets the stub of IIMRUClient.get_JobSubmissionResult()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUResultHandler`1">
+            <summary>Stub type of Org.Apache.REEF.IMRU.API.IIMRUResultHandler`1</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUResultHandler`1.#ctor">
+            <summary>Initializes a new instance of type StubIIMRUResultHandler</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUResultHandler`1.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUResultHandler`1.HandleResultT0">
+            <summary>Sets the stub of IIMRUResultHandler`1.HandleResult(!0 result)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUResultHandler`1.oareefimru::Org#Apache#REEF#IMRU#API#IIMRUResultHandler{T}#HandleResult(`0)">
+            <summary>Sets the stub of IIMRUResultHandler`1.HandleResult(!0 result)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIIMRUResultHandler`1.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.StubIJobCancelledDetector">
+            <summary>Stub type of Org.Apache.REEF.IMRU.API.IJobCancelledDetector</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIJobCancelledDetector.#ctor">
+            <summary>Initializes a new instance of type StubIJobCancelledDetector</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIJobCancelledDetector.IsJobCancelledStringOut">
+            <summary>Sets the stub of IJobCancelledDetector.IsJobCancelled(String&amp; cancellationMessage)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIJobCancelledDetector.oareefimru::Org#Apache#REEF#IMRU#API#IJobCancelledDetector#IsJobCancelled(System.String@)">
+            <summary>Sets the stub of IJobCancelledDetector.IsJobCancelled(String&amp; cancellationMessage)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.StubIMapFunction`2">
+            <summary>Stub type of Org.Apache.REEF.IMRU.API.IMapFunction`2</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIMapFunction`2.#ctor">
+            <summary>Initializes a new instance of type StubIMapFunction</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIMapFunction`2.MapT0">
+            <summary>Sets the stub of IMapFunction`2.Map(!0 mapInput)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIMapFunction`2.oareefimru::Org#Apache#REEF#IMRU#API#IMapFunction{TMapInput@TMapOutput}#Map(`0)">
+            <summary>Sets the stub of IMapFunction`2.Map(!0 mapInput)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.StubIPerMapperConfigGenerator">
+            <summary>Stub type of Org.Apache.REEF.IMRU.API.IPerMapperConfigGenerator</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIPerMapperConfigGenerator.#ctor">
+            <summary>Initializes a new instance of type StubIPerMapperConfigGenerator</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIPerMapperConfigGenerator.GetMapperConfigurationInt32Int32">
+            <summary>Sets the stub of IPerMapperConfigGenerator.GetMapperConfiguration(Int32 currentPartitionNumber, Int32 totalMappers)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIPerMapperConfigGenerator.oareefimru::Org#Apache#REEF#IMRU#API#IPerMapperConfigGenerator#GetMapperConfiguration(System.Int32,System.Int32)">
+            <summary>Sets the stub of IPerMapperConfigGenerator.GetMapperConfiguration(Int32 currentPartitionNumber, Int32 totalMappers)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.API.Fakes.StubIUpdateFunction`3">
+            <summary>Stub type of Org.Apache.REEF.IMRU.API.IUpdateFunction`3</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIUpdateFunction`3.#ctor">
+            <summary>Initializes a new instance of type StubIUpdateFunction</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIUpdateFunction`3.Initialize">
+            <summary>Sets the stub of IUpdateFunction`3.Initialize()</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIUpdateFunction`3.oareefimru::Org#Apache#REEF#IMRU#API#IUpdateFunction{TMapInput@TMapOutput@TResult}#Initialize">
+            <summary>Sets the stub of IUpdateFunction`3.Initialize()</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.API.Fakes.StubIUpdateFunction`3.oareefimru::Org#Apache#REEF#IMRU#API#IUpdateFunction{TMapInput@TMapOutput@TResult}#Update(`1)">
+            <summary>Sets the stub of IUpdateFunction`3.Update(!1 input)</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.API.Fakes.StubIUpdateFunction`3.UpdateT1">
+            <summary>Sets the stub of IUpdateFunction`3.Update(!1 input)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient">
+            <summary>Shim type of Org.Apache.REEF.IMRU.InProcess.InProcessIMRUClient</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.#ctor(Org.Apache.REEF.IMRU.InProcess.InProcessIMRUClient)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.Bind(Org.Apache.REEF.IMRU.API.IIMRUClient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.SubmitOf4IMRUJobDefinition``4(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Org.Apache.REEF.IMRU.API.IMRUJobDefinition,System.Collections.Generic.IEnumerable{``2}})">
+            <summary>Sets the shim of InProcessIMRUClient.Submit(IMRUJobDefinition jobDefinition)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.ConstructorInt32">
+            <summary>Sets the shim of InProcessIMRUClient.InProcessIMRUClient(Int32 numberOfMappers)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.JobSubmissionResultGet">
+            <summary>Sets the shim of InProcessIMRUClient.get_JobSubmissionResult()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.StaticConstructor">
+            <summary>Sets the shim of InProcessIMRUClient.InProcessIMRUClient()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.AllInstances.SubmitOf4IMRUJobDefinition``4(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Org.Apache.REEF.IMRU.InProcess.InProcessIMRUClient,Org.Apache.REEF.IMRU.API.IMRUJobDefinition,System.Collections.Generic.IEnumerable{``2}})">
+            <summary>Sets the shim of InProcessIMRUClient.Submit(IMRUJobDefinition jobDefinition)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUClient.AllInstances.JobSubmissionResultGet">
+            <summary>Sets the shim of InProcessIMRUClient.get_JobSubmissionResult()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration">
+            <summary>Shim type of Org.Apache.REEF.IMRU.InProcess.InProcessIMRUConfiguration</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.#ctor(Org.Apache.REEF.IMRU.InProcess.InProcessIMRUConfiguration)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.Constructor">
+            <summary>Sets the shim of InProcessIMRUConfiguration.InProcessIMRUConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.StaticConstructor">
+            <summary>Sets the shim of InProcessIMRUConfiguration.InProcessIMRUConfiguration()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.InProcess.Fakes.ShimInProcessIMRUConfiguration.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers">
+            <summary>Shim type of Org.Apache.REEF.IMRU.InProcess.Parameters.NumberOfMappers</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.#ctor(Org.Apache.REEF.IMRU.InProcess.Parameters.NumberOfMappers)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.Bind(Org.Apache.REEF.Tang.Annotations.Name{System.Int32})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.Constructor">
+            <summary>Sets the shim of NumberOfMappers.NumberOfMappers()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.InProcess.Parameters.Fakes.ShimNumberOfMappers.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.Client.REEFIMRUClientConfiguration</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.#ctor(Org.Apache.REEF.IMRU.OnREEF.Client.REEFIMRUClientConfiguration)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.Constructor">
+            <summary>Sets the shim of REEFIMRUClientConfiguration.REEFIMRUClientConfiguration()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.StaticConstructor">
+            <summary>Sets the shim of REEFIMRUClientConfiguration.REEFIMRUClientConfiguration()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Client.Fakes.ShimREEFIMRUClientConfiguration.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.Driver.IMRUSystemException</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.#ctor(Org.Apache.REEF.IMRU.OnREEF.Driver.IMRUSystemException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.AppendedMessageString">
+            <summary>Sets the shim of IMRUSystemException.AppendedMessage(String message)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.ConstructorString">
+            <summary>Sets the shim of IMRUSystemException.IMRUSystemException(String message)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.ConstructorStringException">
+            <summary>Sets the shim of IMRUSystemException.IMRUSystemException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.StaticConstructor">
+            <summary>Sets the shim of IMRUSystemException.IMRUSystemException()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimIMRUSystemException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.Driver.JobLifeCycleManager</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.#ctor(Org.Apache.REEF.IMRU.OnREEF.Driver.JobLifeCycleManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.Bind(Org.Apache.REEF.IMRU.OnREEF.Driver.IJobLifecycleManager)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.Bind(System.IObservable{Org.Apache.REEF.Driver.IJobCancelled})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.Bind(System.IObserver{Org.Apache.REEF.Driver.IDriverStarted})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.CancellationDetectorGet">
+            <summary>Sets the shim of JobLifeCycleManager.get_CancellationDetector()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.CancellationDetectorSetIJobCancelledDetector">
+            <summary>Sets the shim of JobLifeCycleManager.set_CancellationDetector(IJobCancelledDetector value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ConstructorIJobCancelledDetectorInt32">
+            <summary>Sets the shim of JobLifeCycleManager.JobLifeCycleManager(IJobCancelledDetector cancelletionDetector, Int32 sleepIntervalSec)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.Dispose">
+            <summary>Sets the shim of JobLifeCycleManager.Dispose()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.IsJobCancelledStringOut">
+            <summary>Sets the shim of JobLifeCycleManager.IsJobCancelled(String&amp; cancellationMessage)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.OnCompleted">
+            <summary>Sets the shim of JobLifeCycleManager.OnCompleted()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.OnErrorException">
+            <summary>Sets the shim of JobLifeCycleManager.OnError(Exception error)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.OnNextIDriverStarted">
+            <summary>Sets the shim of JobLifeCycleManager.OnNext(IDriverStarted value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.OnTimerObjectElapsedEventArgs">
+            <summary>Sets the shim of JobLifeCycleManager.OnTimer(Object source, ElapsedEventArgs e)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.StaticConstructor">
+            <summary>Sets the shim of JobLifeCycleManager.JobLifeCycleManager()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.SubscribeIObserverOfIJobCancelled">
+            <summary>Sets the shim of JobLifeCycleManager.Subscribe(IObserver`1&lt;IJobCancelled&gt; observer)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.UnsubscribeIObserverOfIJobCancelled">
+            <summary>Sets the shim of JobLifeCycleManager.Unsubscribe(IObserver`1&lt;IJobCancelled&gt; observer)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.CancellationDetectorGet">
+            <summary>Sets the shim of JobLifeCycleManager.get_CancellationDetector()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.CancellationDetectorSetIJobCancelledDetector">
+            <summary>Sets the shim of JobLifeCycleManager.set_CancellationDetector(IJobCancelledDetector value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.Dispose">
+            <summary>Sets the shim of JobLifeCycleManager.Dispose()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.IsJobCancelledStringOut">
+            <summary>Sets the shim of JobLifeCycleManager.IsJobCancelled(String&amp; cancellationMessage)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.OnCompleted">
+            <summary>Sets the shim of JobLifeCycleManager.OnCompleted()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.OnErrorException">
+            <summary>Sets the shim of JobLifeCycleManager.OnError(Exception error)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.OnNextIDriverStarted">
+            <summary>Sets the shim of JobLifeCycleManager.OnNext(IDriverStarted value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.OnTimerObjectElapsedEventArgs">
+            <summary>Sets the shim of JobLifeCycleManager.OnTimer(Object source, ElapsedEventArgs e)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.SubscribeIObserverOfIJobCancelled">
+            <summary>Sets the shim of JobLifeCycleManager.Subscribe(IObserver`1&lt;IJobCancelled&gt; observer)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.AllInstances.UnsubscribeIObserverOfIJobCancelled">
+            <summary>Sets the shim of JobLifeCycleManager.Unsubscribe(IObserver`1&lt;IJobCancelled&gt; observer)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.Driver.JobLifeCycleManager+SleepIntervalParameter</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.#ctor(Org.Apache.REEF.IMRU.OnREEF.Driver.JobLifeCycleManager.SleepIntervalParameter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.Bind(Org.Apache.REEF.Tang.Annotations.Name{System.Int32})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.Constructor">
+            <summary>Sets the shim of SleepIntervalParameter.SleepIntervalParameter()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimJobLifeCycleManager.ShimSleepIntervalParameter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.Driver.MaximumNumberOfEvaluatorFailuresExceededException</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.#ctor(Org.Apache.REEF.IMRU.OnREEF.Driver.MaximumNumberOfEvaluatorFailuresExceededException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.ConstructorInt32">
+            <summary>Sets the shim of MaximumNumberOfEvaluatorFailuresExceededException.MaximumNumberOfEvaluatorFailuresExceededException(Int32 maximumAllowedEvaluatorFailures)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.CreateMessageInt32">
+            <summary>Sets the shim of MaximumNumberOfEvaluatorFailuresExceededException.CreateMessage(Int32 maximumAllowedEvaluatorFailures)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.StaticConstructor">
+            <summary>Sets the shim of MaximumNumberOfEvaluatorFailuresExceededException.MaximumNumberOfEvaluatorFailuresExceededException()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.ShimMaximumNumberOfEvaluatorFailuresExceededException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIJobLifecycleManager">
+            <summary>Stub type of Org.Apache.REEF.IMRU.OnREEF.Driver.IJobLifecycleManager</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIJobLifecycleManager.#ctor">
+            <summary>Initializes a new instance of type StubIJobLifecycleManager</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIJobLifecycleManager.SubscribeIObserverOfIJobCancelled">
+            <summary>Sets the stub of IObservable`1.Subscribe(IObserver`1&lt;!0&gt; observer)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIJobLifecycleManager.global::System#IObservable{Org#Apache#REEF#Driver#IJobCancelled}#Subscribe(System.IObserver{Org.Apache.REEF.Driver.IJobCancelled})">
+            <summary>Sets the stub of IObservable`1.Subscribe(IObserver`1&lt;!0&gt; observer)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException">
+            <summary>Stub type of Org.Apache.REEF.IMRU.OnREEF.Driver.IMRUSystemException</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubIMRUSystemException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubIMRUSystemException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.InitializeStub">
+            <summary>Initializes a new instance of type StubIMRUSystemException</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubIMRUSystemException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubJobLifeCycleManager">
+            <summary>Stub type of Org.Apache.REEF.IMRU.OnREEF.Driver.JobLifeCycleManager</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubJobLifeCycleManager.#ctor(Org.Apache.REEF.IMRU.API.IJobCancelledDetector,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubJobLifeCycleManager.InitializeStub">
+            <summary>Initializes a new instance of type StubJobLifeCycleManager</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubJobLifeCycleManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubJobLifeCycleManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Driver.Fakes.StubJobLifeCycleManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.IMRUTaskAppException</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.#ctor(Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.IMRUTaskAppException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of IMRUTaskAppException.IMRUTaskAppException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.ConstructorString">
+            <summary>Sets the shim of IMRUTaskAppException.IMRUTaskAppException(String message)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.ConstructorStringException">
+            <summary>Sets the shim of IMRUTaskAppException.IMRUTaskAppException(String message, Exception innerException)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.ShimIMRUTaskAppException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.StubITaskState">
+            <summary>Stub type of Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.ITaskState</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.IMRUTasks.Fakes.StubITaskState.#ctor">
+            <summary>Initializes a new instance of type StubITaskState</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.Parameters.MaxRetryNumberInRecovery</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.#ctor(Org.Apache.REEF.IMRU.OnREEF.Parameters.MaxRetryNumberInRecovery)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.Bind(Org.Apache.REEF.Tang.Annotations.Name{System.Int32})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.Constructor">
+            <summary>Sets the shim of MaxRetryNumberInRecovery.MaxRetryNumberInRecovery()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.Parameters.Fakes.ShimMaxRetryNumberInRecovery.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.ResultHandler.ResultOutputLocation</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.#ctor(Org.Apache.REEF.IMRU.OnREEF.ResultHandler.ResultOutputLocation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.Bind(Org.Apache.REEF.Tang.Annotations.Name{System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.Constructor">
+            <summary>Sets the shim of ResultOutputLocation.ResultOutputLocation()</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimResultOutputLocation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1">
+            <summary>Shim type of Org.Apache.REEF.IMRU.OnREEF.ResultHandler.WriteResultHandler`1</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.#ctor(Org.Apache.REEF.IMRU.OnREEF.ResultHandler.WriteResultHandler{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.Bind(Org.Apache.REEF.IMRU.API.IIMRUResultHandler{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.ConstructorIStreamingCodecOfT0IFileSystemString">
+            <summary>Sets the shim of WriteResultHandler`1.WriteResultHandler`1(IStreamingCodec`1&lt;!0&gt; resultCodec, IFileSystem fileSystem, String fileName)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.Dispose">
+            <summary>Sets the shim of WriteResultHandler`1.Dispose()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.GenerateLocalFilename">
+            <summary>Sets the shim of WriteResultHandler`1.GenerateLocalFilename()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.HandleResultT0">
+            <summary>Sets the shim of WriteResultHandler`1.HandleResult(!0 value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.StaticConstructor">
+            <summary>Sets the shim of WriteResultHandler`1.WriteResultHandler`1()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.WriteOutputT0">
+            <summary>Sets the shim of WriteResultHandler`1.WriteOutput(!0 result)</summary>
+        </member>
+        <member name="T:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.AllInstances.Dispose">
+            <summary>Sets the shim of WriteResultHandler`1.Dispose()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.AllInstances.GenerateLocalFilename">
+            <summary>Sets the shim of WriteResultHandler`1.GenerateLocalFilename()</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.AllInstances.HandleResultT0">
+            <summary>Sets the shim of WriteResultHandler`1.HandleResult(!0 value)</summary>
+        </member>
+        <member name="P:Org.Apache.REEF.IMRU.OnREEF.ResultHandler.Fakes.ShimWriteResultHandler`1.AllInstances.WriteOutputT0">
+            <summary>Sets the shim of WriteResultHandler`1.WriteOutput(!0 result)</summary>
+        </member>
+    </members>
+</doc>
