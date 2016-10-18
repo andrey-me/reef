@@ -1,11 +1,25 @@
-﻿using System;
+﻿// Licensed to the Apache Software Foundation (ASF) under one
+// or more contributor license agreements.  See the NOTICE file
+// distributed with this work for additional information
+// regarding copyright ownership.  The ASF licenses this file
+// to you under the Apache License, Version 2.0 (the
+// "License"); you may not use this file except in compliance
+// with the License.  You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing,
+// software distributed under the License is distributed on an
+// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+// KIND, either express or implied.  See the License for the
+// specific language governing permissions and limitations
+// under the License.
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Org.Apache.REEF.Common.Catalog;
 using Org.Apache.REEF.Driver;
 using Org.Apache.REEF.Driver.Bridge;
@@ -15,7 +29,6 @@ using Org.Apache.REEF.IMRU.API;
 using Org.Apache.REEF.IMRU.OnREEF.Driver;
 using Org.Apache.REEF.IMRU.OnREEF.Parameters;
 using Org.Apache.REEF.IO.PartitionedData;
-using Org.Apache.REEF.IO.PartitionedData.Fakes;
 using Org.Apache.REEF.Network.Group.Config;
 using Org.Apache.REEF.Network.Group.Driver;
 using Org.Apache.REEF.Network.Group.Driver.Impl;
@@ -36,9 +49,9 @@ namespace Org.Apache.REEF.Tests.Functional.IMRU
         {
             var driver = TangFactory
                     .GetTang()
-                    .NewInjector(GetConfig<BasicType, BasicType, BasicType, BasicType>())
-                    .GetInstance(typeof(IMRUDriver<BasicType, BasicType, BasicType, BasicType>))
-                as IMRUDriver<BasicType, BasicType, BasicType, BasicType>;
+                    .NewInjector(GetDriverConfig<ImruDriverTestType, ImruDriverTestType, ImruDriverTestType, ImruDriverTestType>())
+                    .GetInstance(typeof(IMRUDriver<ImruDriverTestType, ImruDriverTestType, ImruDriverTestType, ImruDriverTestType>))
+                as IMRUDriver<ImruDriverTestType, ImruDriverTestType, ImruDriverTestType, ImruDriverTestType>;
 
             IDriverStarted startedEvent = null;
             driver.OnNext(startedEvent);
@@ -76,14 +89,11 @@ namespace Org.Apache.REEF.Tests.Functional.IMRU
             }
         }
 
-        private IConfiguration GetConfig<TMapInput, TMapOutput, TResult, TPartitionType>()
+        private IConfiguration GetDriverConfig<TMapInput, TMapOutput, TResult, TPartitionType>()
         {
             var testConfig = TangFactory.GetTang().NewConfigurationBuilder()
-                .BindImplementation(GenericType<IPartitionedInputDataSet>.Class, GenericType<TypeFake>.Class)
-                .Build();
-
-            var missingInjectsConfig = TangFactory.GetTang().NewConfigurationBuilder()
-                .BindImplementation(GenericType<IEvaluatorRequestor>.Class, GenericType<TypeFake>.Class)
+                .BindImplementation(GenericType<IPartitionedInputDataSet>.Class, GenericType<ImruDriverTestType>.Class)
+                .BindImplementation(GenericType<IEvaluatorRequestor>.Class, GenericType<ImruDriverTestType>.Class)
                 .Build();
 
             var jobDefinition = new IMRUJobDefinitionBuilder()
@@ -134,8 +144,7 @@ namespace Org.Apache.REEF.Tests.Functional.IMRU
                         .BindImplementation(GenericType<IGroupCommDriver>.Class, GenericType<GroupCommDriver>.Class)
                         .Build(),
                     jobDefinition.PartitionedDatasetConfiguration,
-                    overallPerMapConfig,
-                    missingInjectsConfig
+                    overallPerMapConfig
                 })
                 .BindNamedParameter(typeof(SerializedUpdateTaskStateConfiguration),
                     _configurationSerializer.ToString(jobDefinition.UpdateTaskStateConfiguration))
@@ -175,37 +184,17 @@ namespace Org.Apache.REEF.Tests.Functional.IMRU
             return driverConfig;
         }
 
-        public class BasicType
+        /// <summary>
+        /// Simple Type to help with Tang injection when constructing IMRUDriver.
+        /// Cares minimum implmentation to satisfy new driver instance for test scenarios
+        /// </summary>
+        public class ImruDriverTestType : IPartitionedInputDataSet, IEvaluatorRequestor
         {
+            public int Count { get; private set; }
+            public string Id { get; private set; }
+
             [Inject]
-            public BasicType()
-            {
-            }
-        }
-
-        private class MapInput
-        {
-            public MapInput()
-            {
-            }
-        }
-
-        private class MapOutput
-        {
-        }
-
-        private class ImruResult
-        {
-        }
-
-        private class PartitionType
-        {
-        }
-
-        public class TypeFake : IPartitionedInputDataSet, IEvaluatorRequestor
-        {
-            [Inject]
-            public TypeFake()
+            public ImruDriverTestType()
             {
             }
 
@@ -219,8 +208,6 @@ namespace Org.Apache.REEF.Tests.Functional.IMRU
                 return GetEnumerator();
             }
 
-            public int Count { get; private set; }
-            public string Id { get; private set; }
             public IPartitionDescriptor GetPartitionDescriptorForId(string partitionId)
             {
                 throw new NotImplementedException();

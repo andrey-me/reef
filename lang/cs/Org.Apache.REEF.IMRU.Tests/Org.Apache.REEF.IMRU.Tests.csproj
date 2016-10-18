@@ -35,13 +35,6 @@ under the License.
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Org.Apache.REEF.Driver.Fakes">
-      <HintPath>FakesAssemblies\Org.Apache.REEF.Driver.Fakes.dll</HintPath>
-    </Reference>
-    <Reference Include="Org.Apache.REEF.IMRU.Fakes">
-      <HintPath>FakesAssemblies\Org.Apache.REEF.IMRU.Fakes.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -105,8 +98,6 @@ under the License.
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <Fakes Include="Fakes\Org.Apache.REEF.IMRU.fakes" />
-    <Fakes Include="Fakes\Org.Apache.REEF.Driver.fakes" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,12 +18,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using Org.Apache.REEF.Driver;
 using Org.Apache.REEF.IMRU.API;
-using Org.Apache.REEF.IMRU.API.Fakes;
 using Org.Apache.REEF.IMRU.OnREEF.Driver;
 using Xunit;
 
@@ -36,7 +33,7 @@ namespace Org.Apache.REEF.IMRU.Tests
         {
             string expectedMessage = "cancelled";
             var observer = JobLifeCycleMangerEventTest(
-                detector: FakeStaticDetector(true, expectedMessage))
+                detector: new TestStaticDetector(true, expectedMessage))
                 .FirstOrDefault();
 
             AssertCancelEvent(observer, true, expectedMessage);
@@ -47,7 +44,7 @@ namespace Org.Apache.REEF.IMRU.Tests
         {
             string expectedMessage = "cancelled";
             var observers = JobLifeCycleMangerEventTest(
-                detector: FakeStaticDetector(true, expectedMessage));
+                detector: new TestStaticDetector(true, expectedMessage));
 
             foreach (var observer in observers)
             {
@@ -62,7 +59,7 @@ namespace Org.Apache.REEF.IMRU.Tests
             int isCancelledCheckCounter = 0;
 
             var observer = JobLifeCycleMangerEventTest(
-                detector: FakeStaticDetector(true, expectedMessage, testAction: () => { isCancelledCheckCounter++; }),
+                detector: new TestStaticDetector(true, expectedMessage, testAction: () => { isCancelledCheckCounter++; }),
                 signalCheckPeriodSec: 1,
                 waitForEventPeriodSec: 6)
                 .FirstOrDefault();
@@ -75,7 +72,7 @@ namespace Org.Apache.REEF.IMRU.Tests
         public void JobLifeCyclemanger_NoSignal_DoesNotSendEvent()
         {
             var observer = JobLifeCycleMangerEventTest(
-                detector: FakeStaticDetector(false))
+                detector: new TestStaticDetector(false))
                 .FirstOrDefault();
 
             AssertCancelEvent(observer, false);
@@ -97,7 +94,7 @@ namespace Org.Apache.REEF.IMRU.Tests
             int isCancelledCheckCounter = 0;
 
             var observer = JobLifeCycleMangerEventTest(
-                detector: FakeStaticDetector(true, "cancelled", testAction: () => { isCancelledCheckCounter++; }),
+                detector: new TestStaticDetector(true, "cancelled", testAction: () => { isCancelledCheckCounter++; }),
                 subscribeObserver: false,
                 signalCheckPeriodSec: 1,
                 waitForEventPeriodSec: 6)
@@ -145,21 +142,29 @@ namespace Org.Apache.REEF.IMRU.Tests
             return null;
         }
 
-        private IJobCancelledDetector FakeStaticDetector(bool isCancelled, string expectedMessage = null, Action testAction = null)
+        public class TestStaticDetector : IJobCancelledDetector 
         {
-            return new StubIJobCancelledDetector()
-            {
-                IsJobCancelledStringOut = (out string msg) =>
-                {
-                    if (testAction != null)
-                    {
-                        testAction();
-                    }
+            private bool IsCancelledResponse { get; set; }
+            private string CancellationMessage { get; set; }
+            private Action ActionOnIsCancelledCall { get; set; }
 
-                    msg = expectedMessage;
-                    return isCancelled;
+            public TestStaticDetector(bool isCancelledResponse, string expectedMessage = null, Action testAction = null)
+            {
+                IsCancelledResponse = isCancelledResponse;
+                CancellationMessage = expectedMessage;
+                ActionOnIsCancelledCall = testAction;
+            }
+
+            public bool IsJobCancelled(out string cancellationMessage)
+            {
+                if (ActionOnIsCancelledCall != null)
+                {
+                    ActionOnIsCancelledCall();
                 }
-            };
+
+                cancellationMessage = CancellationMessage;
+                return IsCancelledResponse;
+            }
         }
 
         private class TestObserver : IObserver<IJobCancelled> 
