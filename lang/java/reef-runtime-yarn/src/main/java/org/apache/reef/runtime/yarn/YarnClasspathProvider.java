@@ -85,18 +85,13 @@ public final class YarnClasspathProvider implements RuntimeClasspathProvider {
           getTrimmedStrings(yarnConfiguration, YarnConfiguration.YARN_APPLICATION_CLASSPATH);
       final String[] yarnDefaultClassPath = YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH;
 
+      logYarnConfigClassPath(yarnClassPath, yarnDefaultClassPath);
+
       if (!yarnClassPath.isPresent()) {
         LOG.log(Level.SEVERE,
             "YarnConfiguration.YARN_APPLICATION_CLASSPATH is empty. This indicates a broken cluster configuration.");
         needsLegacyClasspath = true;
       } else {
-        if (LOG.isLoggable(CLASSPATH_LOG_LEVEL)) {
-          LOG.log(CLASSPATH_LOG_LEVEL,
-              "YarnConfiguration.YARN_APPLICATION_CLASSPATH is [" + StringUtils.join(yarnClassPath.get(), '|') + "]");
-          LOG.log(CLASSPATH_LOG_LEVEL,
-              "YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH is [" +
-                  StringUtils.join(yarnDefaultClassPath, '|') + "]");
-        }
         builder.addAll(yarnClassPath.get());
         builder.addAll(yarnDefaultClassPath);
       }
@@ -153,6 +148,23 @@ public final class YarnClasspathProvider implements RuntimeClasspathProvider {
     return this.classPathSuffix;
   }
 
+  private void logYarnConfigClassPath(final Optional<String[]> yarnClassPath, final String[] yarnDefaultClassPath) {
+    if (LOG.isLoggable(CLASSPATH_LOG_LEVEL)) {
+
+      if (!yarnClassPath.isPresent()) {
+        LOG.log(CLASSPATH_LOG_LEVEL,
+                "YarnConfiguration.YARN_APPLICATION_CLASSPATH is NOT present");
+      } else {
+        logYarnClassPath("YarnConfiguration.YARN_APPLICATION_CLASSPATH", yarnClassPath.get());
+      }
+
+      logYarnClassPath("YarnConfiguration.DEFAULT_YARN_CROSS_PLATFORM_APPLICATION_CLASSPATH", yarnDefaultClassPath);
+    }
+  }
+
+  private void logYarnClassPath(final String name, final String[] classpath) {
+    LOG.log(CLASSPATH_LOG_LEVEL, name + " is [" + StringUtils.join(classpath, '|') + "]");
+  }
 
   private void logClasspath() {
     if (LOG.isLoggable(CLASSPATH_LOG_LEVEL)) {

@@ -16,6 +16,7 @@
 // under the License.
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml;
@@ -79,6 +80,7 @@ namespace Org.Apache.REEF.Utilities.Runtime.Yarn
             string yarnConfigFileName = null,
             bool? useHttps = null)
         {
+            TryLogEnvironmentVariables();
             return new YarnConfiguration(hadoopConfDir, yarnConfigFileName, useHttps);
         }
 
@@ -244,6 +246,21 @@ namespace Org.Apache.REEF.Utilities.Runtime.Yarn
             var protocolStr = _useHttps ? "https://" : "http://";
             var text = webAppUriStr.TrimEnd('/') + "/";
             return new Uri(protocolStr + text);
+        }
+
+        private static void TryLogEnvironmentVariables()
+        {
+            try
+            {
+                foreach (DictionaryEntry variable in Environment.GetEnvironmentVariables())
+                {
+                    Logger.Log(Level.Info, "Environment: {0}={1}", variable.Key, variable.Value);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Log(Level.Error, "Environment: Failed to log env variables: {0}", ex);
+            }
         }
     }
 }
