@@ -36,7 +36,7 @@ import java.util.logging.Logger;
 @Immutable
 public final class YarnClasspathProvider implements RuntimeClasspathProvider {
   private static final Logger LOG = Logger.getLogger(YarnClasspathProvider.class.getName());
-  private static final Level CLASSPATH_LOG_LEVEL = Level.FINE;
+  private static final Level CLASSPATH_LOG_LEVEL = Level.INFO;
 
   private static final String YARN_TOO_OLD_MESSAGE =
       "The version of YARN you are using is too old to support classpath assembly. Reverting to legacy method.";
