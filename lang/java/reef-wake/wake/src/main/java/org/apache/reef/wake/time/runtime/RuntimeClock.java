@@ -124,7 +124,15 @@ public final class RuntimeClock implements Clock {
     final Time alarm = new ClientAlarm(this.timer.getCurrent() + offset, handler);
 
     if (LOG.isLoggable(Level.FINEST)) {
-      LOG.log(Level.FINEST, "Schedule alarm: {0}", alarm);
+
+      final int eventQueueLen;
+      synchronized (this.schedule) {
+        eventQueueLen = this.numClientAlarms;
+      }
+
+      LOG.log(Level.FINEST,
+          "Schedule alarm: {0} Outstanding client alarms: {1}",
+          new Object[] {alarm, eventQueueLen});
     }
 
     synchronized (this.schedule) {
@@ -178,10 +186,12 @@ public final class RuntimeClock implements Clock {
       this.exceptionCausedStop = exception;
 
       final Time stopEvent = new StopTime(this.timer.getCurrent());
-      LOG.log(Level.FINE, "Stop scheduled immediately: {0}", stopEvent);
+      LOG.log(Level.FINE,
+          "Stop scheduled immediately: {0} Outstanding client alarms: {1}",
+          new Object[] {stopEvent, this.numClientAlarms});
 
-      this.numClientAlarms = 0;
       assert this.numClientAlarms >= 0;
+      this.numClientAlarms = 0;
 
       this.schedule.clear();
       this.schedule.add(stopEvent);
@@ -202,14 +212,16 @@ public final class RuntimeClock implements Clock {
     synchronized (this.schedule) {
 
       if (this.isClosed) {
-        LOG.log(Level.FINEST, "Clock has already been closed");
+        LOG.exiting(CLASS_NAME, "close", "Clock has already been closed");
         return;
       }
 
       this.isClosed = true;
 
       final Time stopEvent = new StopTime(Math.max(this.timer.getCurrent(), this.lastClientAlarm + 1));
-      LOG.log(Level.FINE, "Graceful shutdown scheduled: {0}", stopEvent);
+      LOG.log(Level.FINE,
+          "Graceful shutdown scheduled: {0} Outstanding client alarms: {1}",
+          new Object[] {stopEvent, this.numClientAlarms});
 
       this.schedule.add(stopEvent);
       this.schedule.notify();
@@ -258,24 +270,6 @@ public final class RuntimeClock implements Clock {
   }
 
   /**
-   * Logs the currently running threads.
-   * @param level Log level used to write the entry.
-   * @param prefix put before the comma-separated list of threads
-   */
-  private static void logThreads(final Level level, final String prefix) {
-
-    if (LOG.isLoggable(level)) {
-
-      final StringBuilder sb = new StringBuilder(prefix);
-      for (final Thread t : Thread.getAllStackTraces().keySet()) {
-        sb.append(t.getName()).append(", ");
-      }
-
-      LOG.log(level, sb.toString());
-    }
-  }
-
-  /**
    * Main event loop.
    * Set up the event handlers, and go into event loop that polls the schedule and process events in it.
    */
@@ -308,10 +302,11 @@ public final class RuntimeClock implements Clock {
 
           if (this.isIdle()) {
             // Handle an idle clock event, without locking this.schedule
-            this.handlers.onNext(new IdleClock(timer.getCurrent()));
+            this.handlers.onNext(new IdleClock(this.timer.getCurrent()));
           }
 
           final Time event;
+          final int eventQueueLen;
           synchronized (this.schedule) {
 
             while (this.schedule.isEmpty()) {
@@ -333,24 +328,24 @@ public final class RuntimeClock implements Clock {
 
             // Remove the event from the schedule and process it:
             event = this.schedule.pollFirst();
-          }
-
-          LOG.log(Level.FINER, "Process event: {0}", event);
-          assert event != null;
-
-          if (event instanceof Alarm) {
 
             if (event instanceof ClientAlarm) {
               --this.numClientAlarms;
               assert this.numClientAlarms >= 0;
             }
 
+            eventQueueLen = this.numClientAlarms;
+          }
+
+          assert event != null;
+
+          LOG.log(Level.FINER,
+              "Process event: {0} Outstanding client alarms: {1}", new Object[] {event, eventQueueLen});
+
+          if (event instanceof Alarm) {
             ((Alarm) event).run();
-
           } else {
-
             this.handlers.onNext(event);
-
             if (event instanceof StopTime) {
               break; // we're done.
             }
@@ -369,8 +364,6 @@ public final class RuntimeClock implements Clock {
       this.handlers.onNext(new RuntimeStop(this.timer.getCurrent(), e));
 
     } finally {
-
-      logThreads(Level.FINE, "Threads running after exiting the clock main loop: ");
       LOG.log(Level.FINE, "Runtime clock exit");
     }
 
