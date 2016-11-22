@@ -15,15 +15,25 @@
 // specific language governing permissions and limitations
 // under the License.
 
-using System.Reflection;
-using System.Runtime.InteropServices;
+using Org.Apache.REEF.IMRU.API;
+using Org.Apache.REEF.Tang.Annotations;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("Org.Apache.REEF.Common.Tests")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyProduct("Org.Apache.REEF.Common.Tests")]
+namespace Org.Apache.REEF.IMRU.OnREEF.Driver
+{
+    /// <summary>
+    /// Default implementation of IJobCancelledDetector. IsJobCancelled returns false always.
+    /// </summary>
+    internal sealed class JobCancellationDetectorAlwaysFalse : IJobCancelledDetector
+    {
+        [Inject]
+        public JobCancellationDetectorAlwaysFalse()
+        {
+        }
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("56634b2e-ff34-4c06-99f4-3c1388093e59")]
+        public bool IsJobCancelled(out string message)
+        {
+            message = null;
+            return false;
+        }
+    }
+}

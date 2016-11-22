@@ -15,15 +15,25 @@
 // specific language governing permissions and limitations
 // under the License.
 
-using System.Reflection;
-using System.Runtime.InteropServices;
+using System;
+using Org.Apache.REEF.Driver;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("Org.Apache.REEF.Common.Tests")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyProduct("Org.Apache.REEF.Common.Tests")]
+namespace Org.Apache.REEF.IMRU.OnREEF.Driver
+{
+    /// <summary>
+    /// Job cancelled event.
+    /// Wraps timestamp and cancellation message.
+    /// </summary>
+    internal sealed class JobCancelled : IJobCancelled
+    {
+        internal JobCancelled(DateTime timestamp, string message)
+        {
+            Timestamp = timestamp;
+            Message = message;
+        }
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("56634b2e-ff34-4c06-99f4-3c1388093e59")]
+        public DateTime Timestamp { get; private set; }
+
+        public string Message { get; private set; }
+    }
+}

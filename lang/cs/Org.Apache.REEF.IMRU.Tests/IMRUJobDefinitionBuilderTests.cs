@@ -1,4 +1,4 @@
-﻿// Licensed to the Apache Software Foundation (ASF) under one
+// Licensed to the Apache Software Foundation (ASF) under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
 // regarding copyright ownership.  The ASF licenses this file
@@ -15,8 +15,11 @@
 // specific language governing permissions and limitations
 // under the License.
 
+using System.Reflection;
 using Org.Apache.REEF.IMRU.API;
+using Org.Apache.REEF.IMRU.OnREEF.Driver;
 using Org.Apache.REEF.Tang.Implementations.Tang;
+using Org.Apache.REEF.Tang.Interface;
 using Org.Apache.REEF.Tang.Util;
 using Xunit;
 
@@ -25,16 +28,20 @@ namespace Org.Apache.REEF.IMRU.Tests
     public class IMRUJobDefinitionBuilderTests
     {
         [Fact]
-        public void JobDefinitionBuilder_CancellationConfigIsOptional()
+        public void JobDefinitionBuilderCancellationConfigIsOptional()
         {
-            var definition = CreateTestBuilder()
-               .Build();
+            var builder = CreateTestBuilder();
+            var definition = builder.Build();
 
-            Assert.Null(definition.JobCancelSignalConfiguration);
+            var defaultConfig = typeof(IMRUJobDefinitionBuilder)
+                .GetField("EmptyConfiguration", BindingFlags.NonPublic | BindingFlags.Static)
+                .GetValue(builder) as IConfiguration;
+
+            Assert.Same(defaultConfig, definition.JobCancelSignalConfiguration);
         }
 
         [Fact]
-        public void JobDefinitionBuilder_CancellationConfigIsSetToNull()
+        public void JobDefinitionBuilderCancellationConfigIsSetToNull()
         {
             var definition = CreateTestBuilder()
                .SetJobCancellationConfiguration(null)
@@ -44,7 +51,7 @@ namespace Org.Apache.REEF.IMRU.Tests
         }
 
         [Fact]
-        public void JobDefinitionBuilder_SetsJobCancellationConfig()
+        public void JobDefinitionBuilderSetsJobCancellationConfig()
         {
             var cancelSignalConfig = TangFactory.GetTang().NewConfigurationBuilder()
                 .BindImplementation(GenericType<IJobCancelledDetector>.Class,
